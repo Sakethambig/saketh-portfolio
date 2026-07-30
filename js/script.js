@@ -40,7 +40,7 @@ document.querySelectorAll("#nav-links a").forEach(link => {
 // ScrollReveal Configuration
 const sr = ScrollReveal({
     distance: '80px',
-    duration: 1800,
+    duration: 800,
     easing: 'ease',
     reset: false
 });
