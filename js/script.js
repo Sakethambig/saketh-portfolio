@@ -90,6 +90,4 @@ sr.reveal('.contact-card', {
 });
 
 // Footer
-sr.reveal('.footer', {
-    origin: 'bottom'
-});
+//sr.reveal('.footer', {origin: 'bottom'});
