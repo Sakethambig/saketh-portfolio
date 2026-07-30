@@ -37,45 +37,25 @@ document.querySelectorAll("#nav-links a").forEach(link => {
 
 });
 
-// ==========================
-// SCROLL REVEAL (Desktop Only)
-// ==========================
-
+// ScrollReveal (Desktop Only)
 if (window.innerWidth > 768) {
 
     const sr = ScrollReveal({
         distance: '40px',
         duration: 700,
-        delay: 0,
         easing: 'ease-out',
-        reset: false,
-        viewFactor: 0.15
+        reset: false
     });
 
     sr.reveal('.hero-text', { origin: 'left' });
-    sr.reveal('.hero-image', { origin: 'right' });
+    sr.reveal('.hero-image', { origin: 'right', delay: 100 });
 
     sr.reveal('.about-image', { origin: 'left' });
-    sr.reveal('.about-text', { origin: 'right' });
+    sr.reveal('.about-text', { origin: 'right', delay: 100 });
 
-    sr.reveal('.skill-card', {
-        origin: 'bottom',
-        interval: 50
-    });
-
-    sr.reveal('.project-card', {
-        origin: 'bottom',
-        interval: 50
-    });
-
-    sr.reveal('.timeline-item', {
-        origin: 'left',
-        interval: 50
-    });
-
-    sr.reveal('.contact-card', {
-        origin: 'bottom',
-        interval: 50
-    });
+    sr.reveal('.skill-card', { origin: 'bottom', interval: 50 });
+    sr.reveal('.project-card', { origin: 'bottom', interval: 50 });
+    sr.reveal('.timeline-item', { origin: 'left', interval: 50 });
+    sr.reveal('.contact-card', { origin: 'bottom', interval: 50 });
 
 }
