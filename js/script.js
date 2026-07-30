@@ -52,7 +52,7 @@ sr.reveal('.hero-text', {
 
 sr.reveal('.hero-image', {
     origin: 'right',
-    delay: 300
+    delay: 100
 });
 
 // About
@@ -62,25 +62,25 @@ sr.reveal('.about-image', {
 
 sr.reveal('.about-text', {
     origin: 'right',
-    delay: 200
+    delay: 100
 });
 
 // Skills
 sr.reveal('.skill-card', {
     origin: 'bottom',
-    interval: 100
+    interval: 50
 });
 
 // Projects
 sr.reveal('.project-card', {
     origin: 'bottom',
-    interval: 150
+    interval: 100
 });
 
 // Education
 sr.reveal('.timeline-item', {
     origin: 'left',
-    interval: 200
+    interval: 100
 });
 
 // Contact
