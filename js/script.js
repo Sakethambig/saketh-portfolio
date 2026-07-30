@@ -37,57 +37,45 @@ document.querySelectorAll("#nav-links a").forEach(link => {
 
 });
 
-// ScrollReveal Configuration
-const sr = ScrollReveal({
-    distance: '80px',
-    duration: 800,
-    easing: 'ease',
-    reset: false
-});
+// ==========================
+// SCROLL REVEAL (Desktop Only)
+// ==========================
 
-// Hero
-sr.reveal('.hero-text', {
-    origin: 'left'
-});
+if (window.innerWidth > 768) {
 
-sr.reveal('.hero-image', {
-    origin: 'right',
-    delay: 100
-});
+    const sr = ScrollReveal({
+        distance: '40px',
+        duration: 700,
+        delay: 0,
+        easing: 'ease-out',
+        reset: false,
+        viewFactor: 0.15
+    });
 
-// About
-sr.reveal('.about-image', {
-    origin: 'left'
-});
+    sr.reveal('.hero-text', { origin: 'left' });
+    sr.reveal('.hero-image', { origin: 'right' });
 
-sr.reveal('.about-text', {
-    origin: 'right',
-    delay: 100
-});
+    sr.reveal('.about-image', { origin: 'left' });
+    sr.reveal('.about-text', { origin: 'right' });
 
-// Skills
-sr.reveal('.skill-card', {
-    origin: 'bottom',
-    interval: 50
-});
+    sr.reveal('.skill-card', {
+        origin: 'bottom',
+        interval: 50
+    });
 
-// Projects
-sr.reveal('.project-card', {
-    origin: 'bottom',
-    interval: 100
-});
+    sr.reveal('.project-card', {
+        origin: 'bottom',
+        interval: 50
+    });
 
-// Education
-sr.reveal('.timeline-item', {
-    origin: 'left',
-    interval: 100
-});
+    sr.reveal('.timeline-item', {
+        origin: 'left',
+        interval: 50
+    });
 
-// Contact
-sr.reveal('.contact-card', {
-    origin: 'bottom',
-    interval: 120
-});
+    sr.reveal('.contact-card', {
+        origin: 'bottom',
+        interval: 50
+    });
 
-// Footer
-//sr.reveal('.footer', {origin: 'bottom'});
+}
