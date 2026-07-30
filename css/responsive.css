@@ -1,0 +1,316 @@
+/* ==========================================
+   RESPONSIVE.CSS
+   Clean Responsive Layout
+========================================== */
+
+/* ===========================
+   TABLET
+=========================== */
+@media (max-width:1024px){
+
+section{
+    padding:80px 8%;
+}
+
+.hero-content{
+    gap:60px;
+}
+
+.hero-text h3{
+    font-size:28px;
+}
+
+.hero-text h1{
+    font-size:60px;
+}
+
+.hero-text h4{
+    font-size:24px;
+}
+
+.hero-text p{
+    font-size:20px;
+}
+
+.hero-image{
+    justify-content:center;
+}
+
+.hero-image img{
+    width:380px;
+    height:380px;
+}
+
+.about-container{
+    gap:50px;
+}
+
+.about-image img{
+    width:350px;
+}
+
+.skills-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.project-card{
+    grid-template-columns:1fr;
+}
+
+.project-content{
+    border-left:none;
+    border-top:1px solid rgba(247,215,116,.08);
+}
+
+.contact-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.education h2,
+.projects h2,
+.contact h2,
+.about-text h2{
+    font-size:3rem;
+}
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+@media (max-width:768px){
+
+section{
+    padding:70px 7%;
+}
+
+/* Navbar */
+.navbar{
+    padding:18px 7%;
+    justify-content:space-between;
+}
+
+.menu-toggle{
+    display:block;
+    z-index:1002;
+}
+
+.navbar ul{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:100%;
+    height:100vh;
+    background:#02130f;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    transition:.4s;
+    z-index:1001;
+}
+
+.navbar ul.active{
+    right:0;
+}
+
+.navbar ul li a{
+    font-size:28px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+}
+
+/* Hero */
+.hero{
+    padding-top:100px;
+}
+
+.hero-content{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:35px;
+    min-height:auto;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-text h3{
+    font-size:20px;
+}
+
+.hero-text h1{
+    font-size:3.2rem;
+    line-height:1.1;
+}
+
+.hero-text h4{
+    font-size:20px;
+}
+
+.hero-text p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.hero-image{
+    width:100%;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:260px;
+    height:260px;
+    margin-top:0;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+
+.hero-buttons .btn{
+    width:100%;
+    max-width:320px;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+/* About */
+.about-container{
+    flex-direction:column;
+    text-align:center;
+    gap:35px;
+}
+
+.about-image img{
+    width:260px;
+}
+
+.about-text h2{
+    font-size:2.5rem;
+}
+
+.about-text p{
+    font-size:17px;
+}
+
+.about-info{
+    flex-direction:column;
+}
+
+/* Skills */
+.skills-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.skill-card{
+    padding:22px 15px;
+}
+
+/* Projects */
+.projects-grid{
+    grid-template-columns:1fr;
+}
+
+.project-buttons{
+    flex-direction:column;
+}
+
+.btn-project{
+    width:100%;
+    justify-content:center;
+}
+
+/* Education */
+.education{
+    padding:70px 20px;
+}
+
+.education h2{
+    font-size:2.6rem;
+    text-align:center;
+}
+
+.education-subtitle{
+    text-align:center;
+}
+
+.timeline{
+    padding-left:35px;
+}
+
+.timeline::before{
+    left:12px;
+}
+
+.timeline-dot{
+    left:-33px;
+}
+
+.timeline-content{
+    width:calc(100% - 20px);
+    margin-left:20px;
+}
+
+/* Contact */
+.contact{
+    padding:70px 20px;
+}
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+/* Footer */
+.footer{
+    padding:50px 20px;
+}
+
+.footer-links{
+    flex-direction:column;
+    gap:15px;
+}
+
+.footer-socials{
+    justify-content:center;
+}
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+@media (max-width:480px){
+
+.hero-text h1{
+    font-size:2.6rem;
+}
+
+.hero-image img{
+    width:220px;
+    height:220px;
+}
+
+.skills-grid{
+    grid-template-columns:1fr;
+}
+
+.about-text h2,
+.projects h2,
+.education h2,
+.contact h2{
+    font-size:2.2rem;
+}
+
+.contact-card,
+.timeline-content{
+    padding:20px;
+}
+}
